@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_todo/app/core/utils/extensions.dart';
-import 'package:getx_todo/app/modules/home/controller.dart';
 import 'package:intl/intl.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
+
+import '../home/controller.dart';
+import '../../core/utils/extensions.dart';
 
 class ReportPage extends StatelessWidget {
   final homeController = Get.find<HomeController>();
@@ -26,8 +27,7 @@ class ReportPage extends StatelessWidget {
                 padding: EdgeInsets.all(4.0.wp),
                 child: Text(
                   "My report",
-                  style:
-                      TextStyle(fontSize: 24.0.sp, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 24.0.sp, fontWeight: FontWeight.bold),
                 ),
               ),
               Padding(
@@ -38,15 +38,13 @@ class ReportPage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding:
-                    EdgeInsets.symmetric(horizontal: 4.0.wp, vertical: 3.0.wp),
+                padding: EdgeInsets.symmetric(horizontal: 4.0.wp, vertical: 3.0.wp),
                 child: const Divider(
                   thickness: 2,
                 ),
               ),
               Padding(
-                padding:
-                    EdgeInsets.symmetric(horizontal: 5.0.wp, vertical: 3.0.wp),
+                padding: EdgeInsets.symmetric(horizontal: 5.0.wp, vertical: 3.0.wp),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -84,13 +82,12 @@ class ReportPage extends StatelessWidget {
                             fontSize: 20.0.sp,
                           ),
                         ),
-                        SizedBox(height: 1.0.wp,),
+                        SizedBox(
+                          height: 1.0.wp,
+                        ),
                         Text(
                           "Efficiency",
-                          style: TextStyle(
-                              color: Colors.grey,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 12.0.sp),
+                          style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 12.0.sp),
                         )
                       ],
                     ),

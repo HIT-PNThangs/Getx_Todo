@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:getx_todo/app/core/utils/extensions.dart';
-import 'package:getx_todo/app/data/models/task.dart';
-import 'package:getx_todo/app/modules/home/controller.dart';
-import 'package:getx_todo/app/modules/home/widgets/add_card.dart';
-import 'package:getx_todo/app/modules/home/widgets/add_dialog.dart';
-import 'package:getx_todo/app/modules/home/widgets/task_card.dart';
-import 'package:getx_todo/app/modules/report/view.dart';
+
+import '../../data/models/task.dart';
+import '../report/view.dart';
+import 'controller.dart';
+import 'widgets/add_card.dart';
+import 'widgets/add_dialog.dart';
+import 'widgets/task_card.dart';
 
 class HomePage extends GetView<HomeController> {
   const HomePage({Key? key}) : super(key: key);
@@ -48,7 +49,9 @@ class HomePage extends GetView<HomeController> {
                                     opacity: 0.8,
                                     child: TaskCard(task: element),
                                   ),
-                                  child: TaskCard(task: element)))
+                                  child: TaskCard(task: element)
+                                  // child: Container()
+                          ))
                               .toList(),
                           AddCard(),
                         ],

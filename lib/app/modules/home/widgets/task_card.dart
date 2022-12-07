@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_todo/app/core/utils/extensions.dart';
-import 'package:getx_todo/app/data/models/task.dart';
-import 'package:getx_todo/app/modules/detail/view.dart';
-import 'package:getx_todo/app/modules/home/controller.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
+
+import '../../../core/utils/extensions.dart';
+import '../../../data/models/task.dart';
+import '../../detail/view.dart';
+import '../controller.dart';
 
 class TaskCard extends StatelessWidget {
   final Task task;

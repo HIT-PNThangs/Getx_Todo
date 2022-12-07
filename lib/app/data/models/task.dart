@@ -32,6 +32,5 @@ class Task extends Equatable {
       {'title': title, 'icon': icon, 'color': color, 'todos': todos};
 
   @override
-  // TODO: implement props
   List<Object?> get props => [title, icon, color];
 }

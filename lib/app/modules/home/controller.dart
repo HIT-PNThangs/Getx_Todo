@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
-import 'package:getx_todo/app/data/models/task.dart';
-import 'package:getx_todo/app/data/services/storage/repository.dart';
+
+import '../../data/models/task.dart';
+import '../../data/services/storage/repository.dart';
 
 class HomeController extends GetxController {
   TaskRepository taskRepository;
@@ -142,7 +143,8 @@ class HomeController extends GetxController {
   }
 
   bool isTodosEmpty(Task task) {
-    return task.todos!.isEmpty || task.todos == null;
+    // return task.todos!.isEmpty || task.todos == null;
+    return task.todos == null;
   }
 
   int getDoneTodo(Task task) {

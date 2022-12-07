@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:getx_todo/app/core/utils/extensions.dart';
-import 'package:getx_todo/app/modules/home/controller.dart';
+
+import '../controller.dart';
+import '../../../core/utils/extensions.dart';
 
 class AddDialog extends StatelessWidget {
   final homeController = Get.find<HomeController>();

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_todo/app/core/utils/extensions.dart';
-import 'package:getx_todo/app/modules/home/controller.dart';
+import '../../../core/utils/extensions.dart';
+import '../../home/controller.dart';
+
 
 class DoneList extends StatelessWidget {
   final homeController = Get.find<HomeController>();

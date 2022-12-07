@@ -1,5 +1,5 @@
-import 'package:getx_todo/app/data/models/task.dart';
-import 'package:getx_todo/app/data/providers/task/provider.dart';
+import '../../models/task.dart';
+import '../../providers/task/provider.dart';
 
 class TaskRepository {
   TaskProvider taskProvider;

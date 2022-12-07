@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_todo/app/core/utils/extensions.dart';
-import 'package:getx_todo/app/modules/home/controller.dart';
-import 'package:getx_todo/app/widgets/note_widget.dart';
+
+import '../../../widgets/note_widget.dart';
+import '../../home/controller.dart';
+import '../../../core/utils/extensions.dart';
 
 class DoingList extends StatelessWidget {
   final homeController = Get.find<HomeController>();

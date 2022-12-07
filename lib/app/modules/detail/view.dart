@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:getx_todo/app/core/utils/extensions.dart';
-import 'package:getx_todo/app/modules/home/controller.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
-import 'wiget/doing_list.dart';
-import 'wiget/done_list.dart';
+import '../../core/utils/extensions.dart';
+import '../home/controller.dart';
+import 'widget/doing_list.dart';
+import 'widget/done_list.dart';
 
 class DetailPage extends StatelessWidget {
   final homeController = Get.find<HomeController>();

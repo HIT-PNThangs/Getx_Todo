@@ -2,10 +2,11 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:getx_todo/app/core/utils/extensions.dart';
-import 'package:getx_todo/app/data/models/task.dart';
-import 'package:getx_todo/app/modules/home/controller.dart';
-import 'package:getx_todo/app/widgets/icons.dart';
+
+import '../../../core/utils/extensions.dart';
+import '../../../data/models/task.dart';
+import '../../../widgets/icons.dart';
+import '../controller.dart';
 
 class AddCard extends StatelessWidget {
   final homeCtrl = Get.find<HomeController>();
